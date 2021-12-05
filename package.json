@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
-    "dev": "nodemon ./bin/www"
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "dev": "tsc -w & nodemon"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -13,5 +14,9 @@
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "pug": "2.0.0-beta11"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.11",
+    "typescript": "^4.5.2"
   }
 }
