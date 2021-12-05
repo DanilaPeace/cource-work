@@ -1,11 +1,12 @@
 {
   "name": "course-work",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
+  "main": "dist/app.js",
   "scripts": {
     "build": "tsc",
     "start": "node dist/app.js",
-    "dev": "tsc -w & nodemon"
+    "dev": "tsc -w & nodemon dist/app.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
